@@ -1,0 +1,252 @@
+/*--- global ---*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --brown: rgb(34, 16, 1);
+    --general-font-family: 'Bona Nova', serif;
+    --logo-font-family: 'Ballet', cursive;
+}
+
+body {
+    min-height: 100vh;
+    background: url("../background-images/thumbnail.jpg");
+    background-size: 89.5em 113em;
+    background-position: center 39%;
+    background-attachment: fixed;
+}
+
+/*---------- navbar ---------*/
+.navbar-wrapper {
+    height: 100%;
+    padding: 3.2em 0;
+}
+
+.navbar-links {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-links a {
+    display: flex;
+    font-size: 1.06em;
+    color: var(--brown);
+    text-shadow: 1px 0px 1px rgba(0,0,0,0.2), 2px 1px 1px rgba(0,0,0,0.1);
+    text-decoration: none;
+    padding-right: 0.2em;
+}
+
+.navbar-links a:hover {
+    font-size: 1.1em;
+    text-decoration: underline;
+    text-shadow: 1px 0px 1px rgba(0,0,0,0.3), 2px 1px 1px rgba(0,0,0,0.3);
+    transition: all 0.01s linear;
+}
+
+.navbar-links ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.navbar-links ul li {
+    font-family: var(--general-font-family);
+    padding-right: 0.3em;
+}
+
+.navbar-links ul li:nth-child(3) {
+    padding-right: 20em;
+}
+
+.navbar-links ul li:nth-child(4) {
+    padding-left: 15em;
+}
+
+
+/*---- ABOUT dropdown ----*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    font-size: 1.06em;
+    padding: 0.3em;
+}
+
+.dropbtn {
+    cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    font-family: var(--general-font-family);
+    padding: 0.3em;
+    font-size: 1.1em;
+}
+
+/*---- title h1 ----*/
+.home-content {
+    width: 100%;
+    height: 72vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.home-content h1 {
+    font-size: 10vw;    
+    font-family: var(--logo-font-family);
+    font-style: italic;
+    font-weight: 100;
+    color: var(--brown);
+    letter-spacing: 0.05em;
+    word-spacing: 2em;
+    margin-left: -0.3em;
+    opacity: 0;
+    animation: OpeningSequence 8s linear forwards;
+}
+
+.home-content h1 span {
+    letter-spacing: 0.05em;
+}
+
+/*---- h2 ----*/
+h2 {
+    font-size: 2.3vw;
+    font-weight: 200;
+    letter-spacing: 2.2em;
+}
+
+/*---- animation ----*/
+@keyframes OpeningSequence {
+	0% {
+		text-shadow: 0 0 50px #fff;
+		opacity: 0.2;
+		transform: rotateY(-90deg);
+	}
+	20% {
+		text-shadow: 0 0 1px #fff;
+		opacity: 0.4;
+		transform: rotateY(0deg);
+	}
+    50% {
+        text-shadow: 0 0 1px #fff;
+		opacity: 0.5;
+        transform: rotateY(90deg);
+    }
+	80% {
+		text-shadow: 0 0 1px #fff;
+		opacity: 0.6;
+		transform: rotateY(0deg);
+	}
+	100% {
+		opacity: 1;
+		pointer-events: none;
+	}
+}
+
+/*---------------- responsive navbar ----------------*/
+/*--- button --*/
+.nav-toggle-btn {
+    padding: 1.2em 1em 0 0 ;
+    text-align: right;
+    font-size: 1.8em;
+    font-weight: 100;
+    color: var(--brown);
+    cursor: pointer;
+    display: none;
+ }
+
+/*-------- responsive --------*/
+ @media screen and (max-width:1100px) {
+    .navbar-links ul {
+        justify-content: flex-end;  
+    }
+       .navbar-links ul li {
+        background: rgba(255, 255, 255, 0.4);
+    }
+    .navbar-links ul li:nth-child(3) {
+        padding-right: 0em;
+    }
+    
+    .navbar-links ul li:nth-child(4) {
+        padding-left: 0em;
+    }
+   
+    .navbar-links ul li a{
+        padding-right: 1em;
+    }    
+}
+
+@media screen and (max-width:800px) {
+    .home-content {
+        height: 80vh;
+        padding-bottom: 1em;
+    }
+    h2 {
+        text-shadow: 1px 0px 1px rgba(0,0,0,0.3), 2px 1px 1px rgba(0,0,0,0.1);
+    }
+}
+
+@media screen and (max-width:680px) {
+    body {
+        background-size: 50em 65em;
+    }
+   .nav-toggle-btn {
+       display: block;
+   } 
+   .nav-list {
+    display: none;
+    border: 1px solid white;
+    position: absolute;
+    top: 4.3em;
+    letter-spacing: 5px;
+    width: 100%;
+    height: 91%;
+    padding: 0;
+   }
+   .show-nav-list {
+    display: flex;
+}
+   .navbar-links ul {
+    flex-direction: column;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    justify-content: space-evenly;
+    align-items: center;
+   }
+   .navbar-links ul li, .navbar-links ul .dropbtn {
+    background: transparent;
+    width: 100%;
+    text-align: center;
+   }
+   .navbar-links a {
+   color: #fff;
+   display: block;
+   padding: 0.5em;
+}
+   .navbar-links a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+}
+   .home-content h1, h2 {
+    font-weight: 500;
+}
+   .dropdown-content {
+       position: fixed;
+       right: 30px;
+       top: 201px;
+   }
+   .hidde {
+    overflow: hidden;
+}
+}

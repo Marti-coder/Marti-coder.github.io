@@ -1,0 +1,298 @@
+/*--- global ---*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --brown: rgb(34, 16, 1);
+    --general-font-family: 'Bona Nova', serif;
+    --logo-font-family: 'Ballet', cursive;
+}
+
+body {
+    min-height: 100vh;
+    background: url(../background-images/thumbnail.jpg);
+    background-size: 130em 200em;
+    background-position: 200px -2500px;
+    background-attachment: fixed;
+}
+
+/*---------- navbar ---------*/
+.navbar-wrapper {
+    height: 120px;
+    width: 100%;
+    padding: 0 1em;
+}
+
+.navbar-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-title h1 {
+    padding: 0.2em 0 0 0.5em;
+    font-size: 3.7vw;    
+    font-family: var(--logo-font-family);
+    font-style: italic;
+    font-weight: 100;
+    color: var(--brown);
+    text-shadow: 1px 0px 1px rgba(0,0,0,0.3), 2px 1px 1px rgba(0,0,0,0.1);
+    letter-spacing: 8px;
+    word-spacing: 0.7em;
+}
+
+.navbar-links ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar-links a {
+    padding-left: 3em;
+    font-size: 1.03em;
+    font-family: var(--general-font-family);
+    color: var(--brown);
+    text-shadow: 1px 0px 1px rgba(0,0,0,0.3), 2px 1px 1px rgba(0,0,0,0.1);
+    text-decoration: none;
+}
+
+.navbar-links a:hover {
+    font-size: 1.1em;
+    text-shadow: 1px 0px 1px rgba(0,0,0,0.3), 2px 1px 1px rgba(0,0,0,0.3);
+    text-decoration: underline;
+    transition: all 0.01s linear;
+}
+
+/*---- ABOUT dropdown ----*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    font-size: 1.06em;
+    padding: 0.3em;
+}
+
+.dropbtn {
+    cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--general-font-family);
+    padding: 0em;
+    font-size: 1.1em;
+}
+
+/*---- logo ----*/
+.logo-res {
+    display: none;
+}
+
+/*------------------ MAIN -----------------*/
+.wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container {
+    margin-top: 5em;
+    padding-bottom: 5em;
+    display: flex;
+    flex-direction: column;
+    animation: fadeInRight 10s;
+}
+
+/*---- animations ----*/
+@keyframes fadeInRight {
+    from {
+        opacity:0;
+        transform:translate3d(100%,0,0)
+       }
+       to {
+        opacity:1;
+        transform:translate3d(0,0,0)
+       }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity:0;
+        transform:translate3d(-100%,0,0)
+       }
+       to {
+        opacity:1;
+        transform:translate3d(0,0,0)
+       }
+}
+
+/*---------- reviews ----------*/
+.review-animation {
+      animation: fadeInLeft 10s;
+    }
+
+.review {
+    padding: 1.5em;
+    font-family: var(--general-font-family);
+    font-size: 1.1em;
+    background: rgba(255, 245, 234, 0.6);
+    transform: translate3d(-100%,0,0);
+    transition: transform 5s ease-out;
+    
+}
+.review.is-visible {
+    transform: translate3d(0,0,0);
+  }
+
+.review q {
+    font-style: italic;
+}
+
+/*---------------- responsive navbar ----------------*/
+/*--- button --*/
+.nav-toggle-btn {
+    padding: 0.5em;
+    margin-top: 1em;
+    font-size: 1.7em;
+    font-weight: 100;
+    color: var(--brown);
+    cursor: pointer;
+    display: none;
+ }
+
+ /*-------- responsive --------*/
+ @media screen and (max-width:1230px) {
+    .navbar-links ul {
+        justify-content: flex-end;
+    }
+    .navbar-links a {
+        padding-left: 1em;
+    }
+    .navbar-title h1 {
+        padding-top: 0.1em;
+        font-size: 3.6vw;
+        font-weight: 500;
+        white-space: nowrap;
+        text-shadow: 1px 0px 1px rgba(0,0,0,0.5), 2px 1px 1px rgba(0,0,0,0.1); 
+    }
+ }
+
+ @media screen and (max-width:1150px) {
+    .navbar-title h1 {
+        letter-spacing: 4px;
+        word-spacing: 0.3em;
+    }
+ }
+
+ @media screen and (max-width:820px) {
+     body {
+        background-size: 120em 155em;
+        background-position: -205px -1800px;
+     }
+    .navbar-links ul {
+        justify-content: space-evenly;
+         }
+    .navbar-links {
+            width: 100%;
+     }
+    .navbar-title h1 {
+         display: none; 
+     }   
+     iframe {
+         width: 70vw;
+         height: 40vh;
+     }
+}
+
+@media screen and (max-width:680px) {
+    /*--- hide html overflow ---*/
+     .hidde {
+       overflow: hidden;
+   }
+   body {
+    background-size: 110em 135em;
+    background-position: -240px -1500px;
+ }
+ iframe {
+    width: 80vw;
+    max-height: 45vh;
+}
+   /*---- toggle button ----*/
+.nav-toggle-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+    padding: 0.8em;
+} 
+/*---- navlist-new ----*/ 
+.navbar-container {
+    width: 100%;
+}
+.nav-list {
+     z-index: 100;
+     display: none;
+     border: 1px solid white;
+     position: absolute;
+     top: 5.3em;
+     letter-spacing: 5px;
+     width: 100%;
+     height: 91%;
+     padding: 0;
+    }
+    .navbar-links {
+        height: 100%;
+    }
+    .navbar-links ul {
+        flex-direction: column;
+        height: 100%;
+        background-color: rgba(0,0,0,0.9);
+        justify-content: space-evenly;
+        align-items: center;
+       }
+       .navbar-links ul li, .navbar-links ul .dropbtn {
+        background: transparent;
+        width: 100%;
+        text-align: center;
+       }
+       .navbar-links a {
+       color: #fff;
+       display: block;
+       padding: 0.5em;
+    }
+       .navbar-links a:hover {
+        background: rgba(255, 255, 255, 0.3);
+        text-decoration: none;
+    }
+    /*---- dropdown-menu ----*/
+    .dropdown-content {
+        position: fixed;
+        right: 30px;
+        top: 224px;
+    }
+    /*---- new-logo ----*/
+    .logo-res {
+        display: inline-block;
+        font-size: 33px;    
+        font-family: var(--logo-font-family);
+        font-style: italic;
+        font-weight: 500;
+        color: var(--brown);
+        text-shadow: 1px 0px 1px rgba(0,0,0,0.5), 2px 1px 1px rgba(0,0,0,0.1);
+        padding-top: 0.1em;
+        letter-spacing: 0.06em;
+        word-spacing: 1em;
+       
+    }
+    .show-nav-list {
+     display: flex;
+ }
+}
