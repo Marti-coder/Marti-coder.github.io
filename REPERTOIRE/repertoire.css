@@ -308,9 +308,6 @@ td {
     .show-nav-list {
      display: flex;
  }
- .opera-wrapper, .concert-wrapper, h2 {
-    width: 120%;
-}
 }
 
 @media screen and (max-width:430px) {
@@ -340,5 +337,8 @@ td {
     h2 {
         font-size: 1.3em;
         word-spacing: 0;
+    }
+    .opera-wrapper, .concert-wrapper, h2, header, .nav-list {
+        width: 120%;
     }
 }
