@@ -222,26 +222,26 @@ body {
     transform: rotate(-10deg);
     animation: fly1 10s linear;
 }
-
+/*
 @keyframes fly1 {
     0% {
 		transform: translateX(100vw) translateY(-100%) rotateZ(180deg)
 	}
 
-}
+}*/
 
 .img-2 {
     z-index: 5;
     transform: rotate(10deg);
     animation: fly2 12s linear;
 }
-
+/*
 @keyframes fly2 {
     0% {
 		transform: translateX(0vw) translateY(-300%) rotateZ(180deg)
 	}
 
-}
+}*/
 
 .img-3  {
     z-index: 3;
@@ -266,147 +266,147 @@ body {
     transform: rotate(5deg);
     animation: fly6 12s linear;
 }
-
+/*
 @keyframes fly6 {
     0% {
 		transform: translateX(-40vw) translateY(-300%) rotateZ(180deg)
 	}
 
-}
+} */
 
 .img-7 {
     z-index: 7;
     transform: rotate(-3deg);
     animation: fly7 12s linear;
 }
-
+/*
 @keyframes fly7 {
     0% {
 		transform: translateX(100vw) translateY(-100%) rotateZ(220deg)
 	}
 }
-
+*/
 .img-8  {
     z-index: 2;
     transform: rotate(7deg);
     animation: fly8 12s linear;
 } 
-
+/*
 @keyframes fly8 {
     0% {
 		transform: translateX(100vw) translateY(200%) rotateZ(220deg)
 	}
 }
-
+*/
 .img-9  {
     z-index: 2;
     transform: rotate(1deg); 
     animation: fly9 12s linear;
 }
-
+/*
 @keyframes fly9 {
     0% {
 		transform: translateX(-100vw) translateY(250%) rotateZ(220deg)
 	}
 }
-
+*/
 .img-10 {
     z-index: 2;
     transform: rotate(-15deg);
     animation: fly10 13s linear;
 }
-
+/*
 @keyframes fly10 {
     0% {
 		transform: translateX(-10vw) translateY(200%) rotateZ(180deg)
 	}
 }
-
+*/
 .img-11 {
     z-index: 2;
     transform: rotate(-5deg);
     animation: fly11 14s linear;
 }
-
+/*
 @keyframes fly11 {
     0% {
 		transform: translateX(-90vw) translateY(-100%) rotateZ(180deg)
 	}
 }
-
+*/
 .img-12 {
    /* width: 13em;*/
     z-index: 2;
     transform: rotate(15deg); 
     animation: fly12 12s linear;
 }
-
+/*
 @keyframes fly12 {
     0% {
 		transform: translateX(50vw) translateY(-400%) rotateZ(200deg)
 	}
 }
-
+*/
 .img-13 {
     z-index: 2;
     transform: rotate(-8deg); 
     animation: fly13 12s linear;
 }
-
+/*
 @keyframes fly13 {
     0% {
 		transform: translateX(-100vw) translateY(200%) rotateZ(220deg)
 	}
 }
-
+*/
 .img-14 {
     z-index: 2;
     transform: rotate(15deg);
     animation: fly14 12s linear;
 }
-
+/*
 @keyframes fly14 {
     0% {
 		transform: translateX(100vw) translateY(250%) rotateZ(180deg)
 	}
 }
-
+*/
 .img-15 {
     z-index: 2;
     transform: rotate(-2deg); 
     animation: fly15 12s linear;
 }
-
+/*
 @keyframes fly15 {
     0% {
 		transform: translateX(0vw) translateY(250%) rotateZ(180deg)
 	}
 }
-
+*/
 .img-16 {
     z-index: 2;
     transform: rotate(7deg);
     animation: fly16 11s linear;
 }
-
+/*
 @keyframes fly16 {
     0% {
 		transform: translateX(40vw) translateY(300%) rotateZ(180deg)
 	}
 }
-
+*/
 .img-17 {
     z-index: 2;
     transform: rotate(-5deg);
     animation: fly17 13s linear;
 }
-
+/*
 @keyframes fly17 {
     0% {
 		transform: translateX(-90vw) translateY(-50%) rotateZ(180deg)
 	}
 }
-
+*/
 .img-18 {
     z-index: 2;
     transform: rotate(1deg);  
@@ -429,13 +429,13 @@ body {
     transform: rotate(-4deg);
     animation: fly20 11s linear;
 }
-
+/*
 @keyframes fly20 {
     0% {
 		transform: translateX(-10vw) translateY(200%) rotateZ(180deg)
 	}
 }
-
+*/
 .img-21 {
     z-index: 2;
     transform: rotate(20deg);
