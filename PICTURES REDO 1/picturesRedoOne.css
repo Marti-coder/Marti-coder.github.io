@@ -596,8 +596,8 @@ body {
   }
 
   @media screen and (max-width:400px) {
-      .empty-container, .popUp {
-          position: inherit;
+      .row {
+          width: 100%;
       }
     .nav-list {
         height: 100%;
