@@ -599,10 +599,10 @@ body {
     .img-1, .img-9, .img-15, .img-21{
         animation: fly2 5s linear;
     }
-    .img-7, .img-11, .img-17,{
+    .img-7, .img-11, .img-17{
         animation: fly2 3s linear;
     }
-    .img-4, .img-13, .img-19,{
+    .img-4, .img-13, .img-19 {
         animation: fly2 6s linear;
     }
     .img-3, .img-5, .img-8, .img-10, .img-12, .img-14, .img-16, .img-18, .img-20{
