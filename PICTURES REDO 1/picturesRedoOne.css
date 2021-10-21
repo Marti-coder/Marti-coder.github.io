@@ -23,7 +23,7 @@ body {
     background: url(../background-images/thumbnail.jpg);
     background-position: 60em 252em;
     background-size: 128em 138em;
-    background-attachment: fixed;
+    
     overflow-x: hidden;
           background-repeat: no-repeat;
  /*   background: url(../background-images/fav22.jpg);
