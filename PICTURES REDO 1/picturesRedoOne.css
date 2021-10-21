@@ -23,9 +23,7 @@ body {
     background: url(../background-images/thumbnail.jpg);
     background-position: 60em 252em;
     background-size: 128em 138em;
-    
-    overflow-x: hidden;
-          background-repeat: no-repeat;
+    background-attachment: fixed;
  /*   background: url(../background-images/fav22.jpg);
     background-size: cover;
     background-position: center; */
@@ -598,9 +596,8 @@ body {
   }
 
   @media screen and (max-width:400px) {
-      body {
-          width: 100%;
-          
+      .empty-container {
+          position: inherit;
       }
     .nav-list {
         height: 100%;
