@@ -224,8 +224,9 @@ td {
        overflow: hidden;
    }
    body {
-    background-position: 53em 225em;
-    background-size: 128em 138em;
+   /* background-position: 53em 225em;
+    background-size: 128em 138em; */
+    background: #fff;
    }
  h2 {
      padding: 1.5em;
@@ -311,7 +312,7 @@ td {
 @media screen and (max-width:430px) {
     body {
        /* background-position: 69em 266em;*/
-       background: #fff;
+      
     }
     .nav-list {
         height: 100%;
