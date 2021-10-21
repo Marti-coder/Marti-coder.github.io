@@ -377,6 +377,9 @@ label.form-label {
     }
 
     @media screen and (max-width:400px) {
+        .nav-list {
+            height: 100%;
+        }
         .logo-res {
             font-size: 8vw;
             word-spacing: 0.5em;
