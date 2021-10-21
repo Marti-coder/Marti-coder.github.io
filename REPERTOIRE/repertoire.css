@@ -228,14 +228,8 @@ td {
     background-position: 53em 225em;
     background-size: 128em 138em;
    }
-   .opera-wrapper, .concert-wrapper {
-       width: 150%;
-   }
  h2 {
-     width: 150%;
      padding: 1.5em;
-     padding-left: 0;
-     padding-right: 7em;
      font-size: 2em;
      white-space: nowrap;
  }
