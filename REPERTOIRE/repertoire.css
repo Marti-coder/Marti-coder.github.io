@@ -228,9 +228,7 @@ td {
     background-position: 53em 225em;
     background-size: 128em 138em;
    }
-   .opera-wrapper, .concert-wrapper {
-    width: 100%;
-}
+
  h2 {
      padding: 1.5em;
      font-size: 2em;
@@ -310,6 +308,9 @@ td {
     .show-nav-list {
      display: flex;
  }
+ .opera-wrapper, .concert-wrapper {
+    width: 100%;
+}
 }
 
 @media screen and (max-width:430px) {
