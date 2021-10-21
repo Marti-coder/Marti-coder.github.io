@@ -596,7 +596,7 @@ body {
   }
 
   @media screen and (max-width:400px) {
-      body {
+      html {
           width: 100%;
       }
     .nav-list {
