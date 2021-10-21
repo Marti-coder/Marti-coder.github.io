@@ -308,9 +308,6 @@ td {
     .show-nav-list {
      display: flex;
  }
- .opera-wrapper, .concert-wrapper {
-    width: 100%;
-}
 }
 
 @media screen and (max-width:430px) {
