@@ -308,7 +308,10 @@ td {
  }
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:430px) {
+    body {
+        background-position: 69em 266em;
+    }
     .nav-list {
         height: 100%;
     }
@@ -327,5 +330,9 @@ td {
         font-size: 15px;
         padding: 0;
         margin-top: 2.5em;
+    }
+    h2 {
+        font-size: 1.3em;
+        word-spacing: 0;
     }
 }
