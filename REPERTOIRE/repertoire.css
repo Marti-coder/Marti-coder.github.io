@@ -308,7 +308,7 @@ td {
     .show-nav-list {
      display: flex;
  }
- .opera-wrapper, .concert-wrapper {
+ .opera-wrapper, .concert-wrapper, h2 {
     width: 120%;
 }
 }
