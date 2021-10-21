@@ -325,7 +325,7 @@ td {
     .nav-toggle-btn {
         font-size: 1.4em;
     }
-    .nav-toggle-btn i {
+    .fa, .fas {
         margin-right: 1em;
     }
     .dropdown {
