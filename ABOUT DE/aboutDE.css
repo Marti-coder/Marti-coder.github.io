@@ -323,6 +323,10 @@ body {
  }
 
  @media screen and (max-width:400px) {
+     body {
+         background-size: 93em 112em;
+         background-position: 148em 99em;
+        }
     .nav-list {
         height: 100%;
     }

@@ -4,7 +4,7 @@ const text = document.querySelector(".text-wrapp");
 setTimeout(function() {
     background.style.marginLeft = "350px";
     text.style.display = "block";
-}, 2000);
+}, 4000);
 
 //nav-list appearance 
 const navbtn = document.querySelector(".nav-toggle-btn");

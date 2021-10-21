@@ -596,6 +596,9 @@ body {
   }
 
   @media screen and (max-width:400px) {
+      body {
+          overflow-x: hidden;
+      }
     .nav-list {
         height: 100%;
     }

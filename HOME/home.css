@@ -76,7 +76,6 @@ body {
 /*---- ABOUT dropdown ----*/
 .dropdown-content {
     display: none;
-    position: absolute;
     font-size: 1.06em;
     padding: 0.3em;
 }
@@ -241,11 +240,6 @@ h2 {
    .home-content h1, h2 {
     font-weight: 500;
 }
-   .dropdown-content {
-       position: fixed;
-       right: 30px;
-       top: 201px;
-   }
    .hidde {
     overflow: hidden;
 }
@@ -253,9 +247,25 @@ h2 {
 
 @media screen and (max-width:400px) {
     body {
-        background-position: 39% 37%;
+        background-position: 55% 37%;
+    }
+    .dropdown {
+        display: flex;
+        flex-direction: column;
+    }
+    .dropdown-content a {
+        font-size: 15px;
+        padding: 0.4em;
+        margin-top: 2.5em;
     }
     h2 {
+        padding-left: 3em;
         font-size: 2.7vw;
+    }
+}
+
+@media screen and (max-width:340px) {
+    .fa, .fas {
+        background-color: rgba(255, 255, 255, 0.9);
     }
 }
