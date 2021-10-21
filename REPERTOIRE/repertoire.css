@@ -324,6 +324,7 @@ td {
     }
     .nav-toggle-btn {
         font-size: 1.4em;
+        margin-right: 1em;
     }
     .dropdown {
         display: flex;
