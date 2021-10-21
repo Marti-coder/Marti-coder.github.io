@@ -224,6 +224,7 @@ td {
        overflow: hidden;
    }
    body {
+       background: url(../background-images/thumbnail.jpg);
     background-position: 53em 225em;
     background-size: 128em 138em;
    }
