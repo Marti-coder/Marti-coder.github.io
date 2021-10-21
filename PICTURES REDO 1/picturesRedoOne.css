@@ -596,8 +596,10 @@ body {
   }
 
   @media screen and (max-width:400px) {
-      html {
+      body {
           width: 100%;
+          overflow-x: hidden;
+          background-repeat: no-repeat;
       }
     .nav-list {
         height: 100%;
