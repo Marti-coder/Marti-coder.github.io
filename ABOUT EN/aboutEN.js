@@ -6,7 +6,7 @@ setTimeout(function() {
     background.style.opacity = "1";
     text.style.display = "block";
 
-}, 4000);
+}, 2000);
 
 //nav-list appearance 
 const navbtn = document.querySelector(".nav-toggle-btn");
