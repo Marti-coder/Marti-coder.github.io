@@ -310,7 +310,8 @@ td {
 
 @media screen and (max-width:430px) {
     body {
-        background-position: 69em 266em;
+       /* background-position: 69em 266em;*/
+       background: #fff;
     }
     .nav-list {
         height: 100%;
