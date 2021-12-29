@@ -314,8 +314,8 @@ body {
 
  @media screen and (max-width:400px) {
      body {
-         background-size: 136em 125em;
-         background-position: 63em 108em;
+         background-size: 96em 115em;
+         background-position: 70em 103em;
      }
     .nav-list {
         height: 100%;
