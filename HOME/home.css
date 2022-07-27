@@ -94,7 +94,8 @@ body {
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+    display: flex;
+    flex-direction: column;
     font-family: var(--general-font-family);
     padding: 0.3em;
     font-size: 1.1em;
