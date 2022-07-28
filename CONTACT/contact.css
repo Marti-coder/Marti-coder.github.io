@@ -190,7 +190,7 @@ label.form-label {
 }
 
 .video video {
-    width: 24vw;
+    width: 16vw;
     border-radius: 50%;
 }
 
@@ -220,6 +220,32 @@ label.form-label {
     position: fixed;
     right: 120px;
     bottom: 250px;
+}
+
+
+/*---------------- footer ----------------*/
+
+footer {
+    padding-right: 1em;
+    font-size: 1.1em;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+footer small {
+    letter-spacing: 3px;
+}
+
+.foot-wrap {
+    width: 30vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social a {
+    padding-left: 2em;
+    color: black;
 }
 
 
