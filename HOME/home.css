@@ -58,6 +58,7 @@ body {
 }
 
 .navbar-links ul {
+    height: 30px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
