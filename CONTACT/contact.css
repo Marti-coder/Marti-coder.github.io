@@ -316,6 +316,9 @@ label.form-label {
     .hidde {
         overflow: hidden;
     }
+    .dropdown-content {
+        width: 100%;
+    }
     /*--- main ---*/
     .wrapper {
         display: block;
