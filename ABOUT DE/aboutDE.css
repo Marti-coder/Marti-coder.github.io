@@ -76,7 +76,6 @@ body {
 }
 
 .navbar-container a:hover {
-    /*font-size: 1.1em;*/
     text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.3), 2px 1px 1px rgba(0, 0, 0, 0.3);
     text-decoration: underline;
     transition: all 0.01s linear;
