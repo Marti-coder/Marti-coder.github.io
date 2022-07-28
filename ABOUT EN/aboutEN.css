@@ -266,6 +266,9 @@ body {
     .background img {
         display: none;
     }
+    .dropdown-content {
+        width: 100%;
+    }
     .text-wrapp {
         position: inherit;
         width: 100%;
