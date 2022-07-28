@@ -295,6 +295,9 @@ body {
         background: rgba(255, 255, 255, 0.3);
         text-decoration: none;
     }
+    .dropdown-content {
+        width: 100%;
+    }
     /*---- new-logo ----*/
     .logo-res {
         display: inline-block;
