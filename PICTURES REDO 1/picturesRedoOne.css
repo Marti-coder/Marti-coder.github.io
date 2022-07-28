@@ -1,10 +1,13 @@
 /*--- global ---*/
+
 * {
     margin: 0;
     padding: 0;
 }
 
-*, ::after, ::before {
+*,
+ ::after,
+ ::before {
     box-sizing: border-box;
 }
 
@@ -17,6 +20,7 @@
 html {
     min-height: 150vh;
 }
+
 body {
     width: 100%;
     height: 100%;
@@ -24,7 +28,7 @@ body {
     background-position: 60em 252em;
     background-size: 128em 138em;
     background-attachment: fixed;
- /*   background: url(../background-images/fav22.jpg);
+    /*   background: url(../background-images/fav22.jpg);
     background-size: cover;
     background-position: center; */
     /*
@@ -34,7 +38,6 @@ body {
     /*background: linear-gradient(rgba(42,20,1, 0.2), rgba(42,20,1, 0.1)), url(./thumbnail\ \(1\).jpg);
     background-position: top; */
     /*  background: linear-gradient(rgba(245,245,220,0.1), rgba(245,245,220,0.1)), url(../images/BeautyPlus_20200914140305623_save.jpg); */
-   
     /*background: linear-gradient(rgba(252, 222, 183, 0.5), rgba(175, 150, 91, 0.4)),url(../VIDEOS\ REDO\ 1/background2.png);
     background-size: cover;
     background-position-x: 30%;
@@ -43,12 +46,13 @@ body {
     /*background: url(./background1.jpg);*/
 }
 
+
 /*---------- navbar ---------*/
 
 .navbar-wrapper {
     height: 120px;
     width: 100%;
-    padding: 0 1em; 
+    padding: 0 1em;
 }
 
 .navbar-container {
@@ -60,18 +64,19 @@ body {
 
 .navbar-title h1 {
     padding: 0.2em 0 0 0.5em;
-    font-size: 3.7vw;    
+    font-size: 3.7vw;
     font-family: var(--logo-font-family);
     font-style: italic;
     font-weight: 100;
     color: var(--brown);
-    text-shadow: 1px 0px 1px rgba(0,0,0,0.3), 2px 1px 1px rgba(0,0,0,0.1);
+    text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.3), 2px 1px 1px rgba(0, 0, 0, 0.1);
     letter-spacing: 8px;
     word-spacing: 0.7em;
     white-space: nowrap;
 }
 
 .navbar-links ul {
+    height: 30px;
     display: flex;
     list-style: none;
 }
@@ -81,20 +86,22 @@ body {
     font-size: 1.03em;
     font-family: var(--general-font-family);
     color: var(--brown);
-    text-shadow: 1px 0px 1px rgba(0,0,0,0.3), 2px 1px 1px rgba(0,0,0,0.1);
+    text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.3), 2px 1px 1px rgba(0, 0, 0, 0.1);
     text-decoration: none;
+    white-space: nowrap;
 }
 
 .navbar-links a:hover {
-    font-size: 1.1em;
-    text-shadow: 1px 0px 1px rgba(0,0,0,0.3), 2px 1px 1px rgba(0,0,0,0.3);
+    text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.3), 2px 1px 1px rgba(0, 0, 0, 0.3);
     text-decoration: underline;
     transition: all 0.01s linear;
 }
 
+
 /*---- ABOUT dropdown ----*/
 
 .dropdown-content {
+    width: 60px;
     display: none;
     font-size: 1.06em;
     padding: 0.3em;
@@ -112,13 +119,19 @@ body {
     font-size: 1.1em;
 }
 
+
 /*---- logo ----*/
+
 .logo-res {
     display: none;
 }
 
+
 /*---------------- responsive navbar ----------------*/
+
+
 /*--- button --*/
+
 .nav-toggle-btn {
     padding: 0.5em;
     margin-top: 1em;
@@ -127,9 +140,11 @@ body {
     color: var(--brown);
     cursor: pointer;
     display: none;
- }
+}
+
 
 /*--------------- MAIN -----------*/
+
 .row {
     display: flex;
     justify-content: center;
@@ -144,15 +159,15 @@ body {
     max-width: 23%;
     padding: 0 4px;
     margin-top: 4em;
-  }
+}
 
 .column li {
     list-style: none;
-	padding: 0 10px 25px 10px;
-	background: whitesmoke;
-	border: 1px solid grey; 
+    padding: 0 10px 25px 10px;
+    background: whitesmoke;
+    border: 1px solid grey;
     box-shadow: 0px 2px 15px #333;
-    position: relative; 
+    position: relative;
 }
 
 .column li:hover {
@@ -160,17 +175,21 @@ body {
     cursor: pointer;
     box-shadow: 3px 5px 15px #333;
 }
+
 .column img {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
-  }
-  /*------------ empty container -------------*/
-  .empty-container {
+}
+
+
+/*------------ empty container -------------*/
+
+.empty-container {
     position: fixed;
     top: 0;
     height: 100vh;
-    background-color:rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
     display: none;
     z-index: 99;
@@ -184,7 +203,7 @@ body {
     height: 100%;
     /*transition: 0.5 ease-out;*/
     transform: translate(-50%, -50%);
-     background-size: contain;
+    background-size: contain;
     display: none;
     z-index: 200;
 }
@@ -216,7 +235,9 @@ body {
     background: rgba(0, 0, 0, 0.8);
 }
 
-  /*------------------------------- IMAGES -----------------------------*/
+
+/*------------------------------- IMAGES -----------------------------*/
+
 .img-1 {
     z-index: 1;
     transform: rotate(-10deg);
@@ -225,9 +246,8 @@ body {
 
 @keyframes fly1 {
     0% {
-		transform: translateX(100vw) translateY(-100%) rotateZ(180deg)
-	}
-
+        transform: translateX(100vw) translateY(-100%) rotateZ(180deg)
+    }
 }
 
 .img-2 {
@@ -238,30 +258,29 @@ body {
 
 @keyframes fly2 {
     0% {
-		transform: translateX(0vw) translateY(-300%) rotateZ(180deg)
-	}
-
+        transform: translateX(0vw) translateY(-300%) rotateZ(180deg)
+    }
 }
 
-.img-3  {
+.img-3 {
     z-index: 3;
     transform: rotate(-10deg);
     animation: fly1 10s linear;
 }
 
-.img-4  {
+.img-4 {
     z-index: 2;
     transform: rotate(2deg);
     animation: fly17 13s linear;
 }
 
-.img-5  {
+.img-5 {
     z-index: 3;
     transform: rotate(10deg);
     animation: fly9 12s linear;
 }
 
-.img-6  {
+.img-6 {
     z-index: 3;
     transform: rotate(5deg);
     animation: fly6 12s linear;
@@ -269,9 +288,8 @@ body {
 
 @keyframes fly6 {
     0% {
-		transform: translateX(-40vw) translateY(-300%) rotateZ(180deg)
-	}
-
+        transform: translateX(-40vw) translateY(-300%) rotateZ(180deg)
+    }
 }
 
 .img-7 {
@@ -282,32 +300,32 @@ body {
 
 @keyframes fly7 {
     0% {
-		transform: translateX(100vw) translateY(-100%) rotateZ(220deg)
-	}
+        transform: translateX(100vw) translateY(-100%) rotateZ(220deg)
+    }
 }
 
-.img-8  {
+.img-8 {
     z-index: 2;
     transform: rotate(7deg);
     animation: fly8 12s linear;
-} 
+}
 
 @keyframes fly8 {
     0% {
-		transform: translateX(100vw) translateY(200%) rotateZ(220deg)
-	}
+        transform: translateX(100vw) translateY(200%) rotateZ(220deg)
+    }
 }
 
-.img-9  {
+.img-9 {
     z-index: 2;
-    transform: rotate(1deg); 
+    transform: rotate(1deg);
     animation: fly9 12s linear;
 }
 
 @keyframes fly9 {
     0% {
-		transform: translateX(-100vw) translateY(250%) rotateZ(220deg)
-	}
+        transform: translateX(-100vw) translateY(250%) rotateZ(220deg)
+    }
 }
 
 .img-10 {
@@ -318,8 +336,8 @@ body {
 
 @keyframes fly10 {
     0% {
-		transform: translateX(-10vw) translateY(200%) rotateZ(180deg)
-	}
+        transform: translateX(-10vw) translateY(200%) rotateZ(180deg)
+    }
 }
 
 .img-11 {
@@ -330,33 +348,33 @@ body {
 
 @keyframes fly11 {
     0% {
-		transform: translateX(-90vw) translateY(-100%) rotateZ(180deg)
-	}
+        transform: translateX(-90vw) translateY(-100%) rotateZ(180deg)
+    }
 }
 
 .img-12 {
-   /* width: 13em;*/
+    /* width: 13em;*/
     z-index: 2;
-    transform: rotate(15deg); 
+    transform: rotate(15deg);
     animation: fly12 12s linear;
 }
 
 @keyframes fly12 {
     0% {
-		transform: translateX(50vw) translateY(-400%) rotateZ(200deg)
-	}
+        transform: translateX(50vw) translateY(-400%) rotateZ(200deg)
+    }
 }
 
 .img-13 {
     z-index: 2;
-    transform: rotate(-8deg); 
+    transform: rotate(-8deg);
     animation: fly13 12s linear;
 }
 
 @keyframes fly13 {
     0% {
-		transform: translateX(-100vw) translateY(200%) rotateZ(220deg)
-	}
+        transform: translateX(-100vw) translateY(200%) rotateZ(220deg)
+    }
 }
 
 .img-14 {
@@ -367,20 +385,20 @@ body {
 
 @keyframes fly14 {
     0% {
-		transform: translateX(100vw) translateY(250%) rotateZ(180deg)
-	}
+        transform: translateX(100vw) translateY(250%) rotateZ(180deg)
+    }
 }
 
 .img-15 {
     z-index: 2;
-    transform: rotate(-2deg); 
+    transform: rotate(-2deg);
     animation: fly15 12s linear;
 }
 
 @keyframes fly15 {
     0% {
-		transform: translateX(0vw) translateY(250%) rotateZ(180deg)
-	}
+        transform: translateX(0vw) translateY(250%) rotateZ(180deg)
+    }
 }
 
 .img-16 {
@@ -391,8 +409,8 @@ body {
 
 @keyframes fly16 {
     0% {
-		transform: translateX(40vw) translateY(300%) rotateZ(180deg)
-	}
+        transform: translateX(40vw) translateY(300%) rotateZ(180deg)
+    }
 }
 
 .img-17 {
@@ -403,13 +421,13 @@ body {
 
 @keyframes fly17 {
     0% {
-		transform: translateX(-90vw) translateY(-50%) rotateZ(180deg)
-	}
+        transform: translateX(-90vw) translateY(-50%) rotateZ(180deg)
+    }
 }
 
 .img-18 {
     z-index: 2;
-    transform: rotate(1deg);  
+    transform: rotate(1deg);
 }
 
 .img-18 {
@@ -432,8 +450,8 @@ body {
 
 @keyframes fly20 {
     0% {
-		transform: translateX(-10vw) translateY(200%) rotateZ(180deg)
-	}
+        transform: translateX(-10vw) translateY(200%) rotateZ(180deg)
+    }
 }
 
 .img-21 {
@@ -442,19 +460,23 @@ body {
     animation: fly14 12s linear;
 }
 
+
 /*---------------- animation ----------------*/
+
 @keyframes fadeIn {
     from {
-        opacity:0;
-        transform:translate3d(0,0,100%)
-       }
-       to {
-        opacity:1;
-        transform:translate3d(0,0,0)
-       }
+        opacity: 0;
+        transform: translate3d(0, 0, 100%)
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0)
+    }
 }
 
+
 /*-------- responsive --------*/
+
 @media screen and (max-width: 1230px) {
     .navbar-links ul {
         justify-content: flex-end;
@@ -466,18 +488,19 @@ body {
         padding-top: 0.1em;
         font-size: 3.6vw;
         font-weight: 500;
-        text-shadow: 1px 0px 1px rgba(0,0,0,0.5), 2px 1px 1px rgba(0,0,0,0.1); 
+        text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.5), 2px 1px 1px rgba(0, 0, 0, 0.1);
     }
-  }
+}
 
-  @media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
     body {
         background-position: 57.5em 244em;
-        background-size: 128em 133em; 
+        background-size: 128em 133em;
     }
-      .navbar-wrapper, .nav-toggle-btn {
+    .navbar-wrapper,
+    .nav-toggle-btn {
         background: rgba(255, 255, 255, 0.4);
-      }
+    }
     .navbar-title h1 {
         letter-spacing: 4px;
         word-spacing: 0.3em;
@@ -486,56 +509,56 @@ body {
         flex: 50%;
         max-width: 46%;
         margin-top: 2.5em;
-      }
-  }
+    }
+}
 
-  @media screen and (max-width:820px) {
+@media screen and (max-width:820px) {
     .navbar-links ul {
         justify-content: space-evenly;
-         }
-    .navbar-links, .navbar-links ul {
-            width: 100%;
-     }
+    }
+    .navbar-links,
+    .navbar-links ul {
+        width: 100%;
+    }
     .navbar-title h1 {
-         display: none; 
-     }   
-     .close-btn {
+        display: none;
+    }
+    .close-btn {
         right: 20px;
     }
 }
 
 @media screen and (max-width:680px) {
     /*--- hide html overflow ---*/
-  .hidde {
-    overflow: hidden;
-}
-
-/*---- general ----*/
-body {
-    background-position: 56em 244em;
-}
-/*---- toggle button ----*/
-.nav-toggle-btn {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 0;
-    padding: 0.8em;
-} 
-/*---- navlist-new ----*/ 
-.navbar-container {
-    width: 100%;
-}
-.nav-list {
-     z-index: 100;
-     display: none;
-     border: 1px solid white;
-     position: absolute;
-     top: 5.3em;
-     letter-spacing: 5px;
-     width: 100%;
-     height: 91%;
-     padding: 0;
+    .hidde {
+        overflow: hidden;
+    }
+    /*---- general ----*/
+    body {
+        background-position: 56em 244em;
+    }
+    /*---- toggle button ----*/
+    .nav-toggle-btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0;
+        padding: 0.8em;
+    }
+    /*---- navlist-new ----*/
+    .navbar-container {
+        width: 100%;
+    }
+    .nav-list {
+        z-index: 100;
+        display: none;
+        border: 1px solid white;
+        position: absolute;
+        top: 5.3em;
+        letter-spacing: 5px;
+        width: 100%;
+        height: 91%;
+        padding: 0;
     }
     .navbar-links {
         height: 100%;
@@ -543,69 +566,84 @@ body {
     .navbar-links ul {
         flex-direction: column;
         height: 100%;
-        background-color: rgba(0,0,0,0.9);
+        background-color: rgba(0, 0, 0, 0.9);
         justify-content: space-evenly;
         align-items: center;
-       }
-       .navbar-links ul li, .navbar-links ul .dropbtn {
+    }
+    .navbar-links ul li,
+    .navbar-links ul .dropbtn {
         background: transparent;
         width: 100%;
         text-align: center;
-       }
-       .navbar-links a {
-       color: #fff;
-       display: block;
-       padding: 0.5em;
     }
-       .navbar-links a:hover {
+    .navbar-links a {
+        color: #fff;
+        display: block;
+        padding: 0.5em;
+    }
+    .navbar-links a:hover {
         background: rgba(255, 255, 255, 0.3);
         text-decoration: none;
     }
     /*---- new-logo ----*/
     .logo-res {
         display: inline-block;
-        font-size: 33px;    
+        font-size: 33px;
         font-family: var(--logo-font-family);
         font-style: italic;
         font-weight: 500;
         color: var(--brown);
-        text-shadow: 1px 0px 1px rgba(0,0,0,0.5), 2px 1px 1px rgba(0,0,0,0.1);
+        text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.5), 2px 1px 1px rgba(0, 0, 0, 0.1);
         padding-top: 0.1em;
         letter-spacing: 0.06em;
         word-spacing: 1em;
-       
     }
     .close-btn {
         position: fixed;
         right: 60px;
     }
     .show-nav-list {
-     display: flex;
- }
+        display: flex;
+    }
 }
 
-  @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .column {
-      flex: 100%;
-      max-width: 80%;
+        flex: 100%;
+        max-width: 80%;
     }
     .close-btn {
         position: fixed;
         right: 0;
     }
-  }
+}
 
-  @media screen and (max-width:400px) {
-    .img-1, .img-9, .img-15, .img-21{
+@media screen and (max-width:400px) {
+    .img-1,
+    .img-9,
+    .img-15,
+    .img-21 {
         animation: fly2 5s linear;
     }
-    .img-7, .img-11, .img-17{
+    .img-7,
+    .img-11,
+    .img-17 {
         animation: fly2 3s linear;
     }
-    .img-4, .img-13, .img-19 {
+    .img-4,
+    .img-13,
+    .img-19 {
         animation: fly2 6s linear;
     }
-    .img-3, .img-5, .img-8, .img-10, .img-12, .img-14, .img-16, .img-18, .img-20{
+    .img-3,
+    .img-5,
+    .img-8,
+    .img-10,
+    .img-12,
+    .img-14,
+    .img-16,
+    .img-18,
+    .img-20 {
         animation: fly2 6s linear;
     }
     .nav-list {
@@ -627,5 +665,4 @@ body {
         padding: 0;
         margin-top: 2.5em;
     }
-    
 }
