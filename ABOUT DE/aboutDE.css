@@ -126,7 +126,8 @@ body {
     position: fixed;
     top: 120px;
     left: 320px;
-    animation: marginLeft 5s 3s;
+    animation: fadeIn 5s;
+    animation: marginLeft 5s 2s;
 }
 
 .background img {
@@ -150,7 +151,6 @@ body {
     text-align: center;
     z-index: 10;
     animation: fadeIn 7s;
-    display: none;
 }
 
 .text-wrapp p:first-of-type::first-letter {
