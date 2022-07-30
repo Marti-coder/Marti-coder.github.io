@@ -2,8 +2,9 @@ const background = document.querySelector(".background");
 const text = document.querySelector(".text-wrapp");
 
 setTimeout(function() {
+
     background.style.marginLeft = "350px";
-    text.style.display = "block";
+
 }, 4000);
 
 //nav-list appearance 
