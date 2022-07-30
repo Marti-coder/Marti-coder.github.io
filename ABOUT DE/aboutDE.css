@@ -127,12 +127,12 @@ body {
     top: 120px;
     left: 320px;
     animation: fadeIn 5s;
-    animation: marginLeft 5s 2s;
+    animation: marginLeft 5s 3s;
 }
 
 .background img {
     max-width: 100%;
-    animation: fadeIn 7s;
+    animation: fadeIn 12s;
 }
 
 
@@ -150,7 +150,7 @@ body {
     border-radius: 10px;
     text-align: center;
     z-index: 10;
-    animation: fadeIn 7s;
+    animation: fadeIn 4s;
 }
 
 .text-wrapp p:first-of-type::first-letter {
