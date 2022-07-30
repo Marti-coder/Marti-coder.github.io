@@ -507,7 +507,11 @@ footer small {
     }
     .foot-wrap {
         justify-content: space-between;
+        align-items: center;
         padding-bottom: 0.2em;
         padding-right: 0.4em;
+    }
+    .social a {
+        font-size: 1.3em;
     }
 }
