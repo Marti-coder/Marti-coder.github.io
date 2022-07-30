@@ -238,7 +238,7 @@ footer small {
 }
 
 .foot-wrap {
-    width: 30vw;
+    width: 400px;
     display: flex;
     justify-content: space-between;
 }
@@ -285,6 +285,9 @@ footer small {
         right: 115px;
         top: 210px;
     }
+    .foot-wrap {
+        width: 35vw;
+    }
 }
 
 @media screen and (max-width:1150px) {
@@ -297,14 +300,20 @@ footer small {
         width: 40%;
     }
     .video {
-        top: 220px;
+        top: 200px;
         right: 100px;
     }
     .video video {
-        width: 28vw;
+        width: 200px;
     }
     .other-side {
         right: 50px;
+    }
+    footer small {
+        letter-spacing: 2px;
+    }
+    .social a {
+        padding-left: 1em;
     }
 }
 
@@ -326,14 +335,17 @@ footer small {
         background-color: rgba(255, 255, 255, 0.4);
     }
     .video {
-        top: 250px;
+        top: 200px;
         right: 50px;
     }
     .video video {
-        width: 32vw;
+        width: 200px;
     }
     .other-side {
         right: 30px;
+    }
+    .foot-wrap {
+        width: 40vw;
     }
 }
 
@@ -353,9 +365,11 @@ footer small {
     .form-wrapper,
     .video {
         position: initial;
+        left: 10px;
         width: 100%;
     }
     .form-wrapper {
+        margin-top: -1em;
         margin-bottom: 4em;
     }
     .video {
@@ -363,7 +377,10 @@ footer small {
         pointer-events: none;
     }
     .video video {
-        width: 45vw;
+        position: relative;
+        bottom: 30px;
+        left: 200px;
+        width: 35vw;
     }
     /*---- toggle button ----*/
     .nav-toggle-btn {
@@ -429,6 +446,31 @@ footer small {
     .show-nav-list {
         display: flex;
     }
+    footer {
+        width: 60%;
+    }
+    footer small {
+        letter-spacing: 0px;
+    }
+    .foot-wrap {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .video video {
+        left: 150px;
+    }
+    footer {
+        font-size: 1em;
+        padding: 0;
+    }
+    .foot-wrap {
+        justify-content: space-around;
+    }
+    .social a {
+        padding-left: 0.7em;
+    }
 }
 
 @media screen and (max-width:400px) {
@@ -450,5 +492,22 @@ footer small {
         font-size: 15px;
         padding: 0;
         margin-top: 2.5em;
+    }
+    .form-wrapper {
+        margin-top: -2em;
+    }
+    textarea.form-control {
+        height: 15vh;
+    }
+    .video video {
+        left: 100px;
+    }
+    footer {
+        width: 100%;
+    }
+    .foot-wrap {
+        justify-content: space-between;
+        padding-bottom: 0.2em;
+        padding-right: 0.4em;
     }
 }
