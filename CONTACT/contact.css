@@ -243,6 +243,15 @@ footer small {
     justify-content: space-between;
 }
 
+.fa-instagram {
+    animation: shake 2s infinite;
+}
+
+.fa-facebook {
+    animation: shake 2s infinite;
+    animation-delay: 1s;
+}
+
 .social a {
     padding-left: 2em;
     color: black;
@@ -262,6 +271,29 @@ footer small {
     color: var(--brown);
     cursor: pointer;
     display: none;
+}
+
+
+/*----- animation -----*/
+
+@keyframes shake {
+    10%,
+    90% {
+        transform: translate3d(0, -1px, -1px);
+    }
+    20%,
+    80% {
+        transform: translate3d(0, 10px, 10px);
+    }
+    30%,
+    50%,
+    70% {
+        transform: translate3d(0, -10px, -10px);
+    }
+    40%,
+    60% {
+        transform: translate3d(0, 4px, 4px);
+    }
 }
 
 
