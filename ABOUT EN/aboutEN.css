@@ -119,7 +119,7 @@ body {
     position: fixed;
     bottom: 40px;
     right: -140px;
-    animation: marginRight 5s 2s, fadeIn 5s;
+    animation: marginRight 5s 3s, fadeIn 12s;
 }
 
 .background img {
@@ -142,8 +142,7 @@ body {
     border-radius: 10px;
     text-align: center;
     z-index: 10;
-    animation: fadeIn 7s;
-    display: none;
+    animation: fadeIn 4s;
     /*background: linear-gradient(120deg, rgba(0,13,6,0.6) 0%, rgba(0,13,6,0.8) 10%, rgba(0,13,6,155) 20%, rgba(0,13,6,0.6) 30%, rgb(201, 180, 171) 50%, rgba(0,13,6,1.2) 70%, rgba(0,13,6,0.6) 80%, rgba(0,13,6,1.2) 100%); */
     /*  background: linear-gradient(320deg, rgba(13, 13, 6, 255) 0%, rgb(209, 142, 65) 10%, rgba(0,13,6,155) 20%, rgba(228, 47, 31, 0.9) 30%, rgba(0,13,6,155) 45%, rgb(209, 142, 65) 60%, rgba(0,13,6,155) 80%, rgba(228, 47, 31, 0.98) 100%); */
 }
