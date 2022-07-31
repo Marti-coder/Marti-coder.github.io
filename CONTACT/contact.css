@@ -180,13 +180,31 @@ label.form-label {
     background-color: rgba(4, 4, 77, 0.4);
 }
 
+#successmsgdiv {
+    display: none;
+    position: absolute;
+    top: 300px;
+    left: 180px;
+    z-index: 10;
+    animation: fadeIn 5s;
+}
+
+#successmsgdiv p {
+    font-family: var(--logo-font-family);
+    font-size: 3vw;
+    font-weight: 800;
+    text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.1), 2px 1px 1px rgba(0, 0, 0, 0.1);
+    word-spacing: 20px;
+    letter-spacing: 2px;
+}
+
 
 /*------ video ------*/
 
 .video {
     position: fixed;
-    right: 150px;
-    top: 190px;
+    right: 180px;
+    top: 220px;
 }
 
 .video video {
@@ -206,6 +224,8 @@ label.form-label {
 }
 */
 
+
+/*
 .other-side p {
     font-family: var(--logo-font-family);
     font-size: 2.8vw;
@@ -221,6 +241,8 @@ label.form-label {
     right: 120px;
     bottom: 250px;
 }
+
+*/
 
 
 /*---------------- footer ----------------*/
@@ -296,6 +318,17 @@ footer small {
     }
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 0, 100%)
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0)
+    }
+}
+
 
 /*-------- responsive --------*/
 
@@ -331,6 +364,9 @@ footer small {
         left: 100px;
         width: 40%;
     }
+    #successmsgdiv {
+        left: 100px;
+    }
     .video {
         top: 200px;
         right: 100px;
@@ -365,6 +401,12 @@ footer small {
     }
     .form-label {
         background-color: rgba(255, 255, 255, 0.4);
+    }
+    #successmsgdiv {
+        left: 40px;
+    }
+    #successmsgdiv p {
+        font-size: 1.8em;
     }
     .video {
         top: 200px;
@@ -404,6 +446,12 @@ footer small {
         margin-top: -1em;
         margin-bottom: 4em;
     }
+    #successmsgdiv {
+        left: 30px;
+    }
+    #successmsgdiv p {
+        font-size: 1.5em;
+    }
     .video {
         display: ruby;
         pointer-events: none;
@@ -411,8 +459,8 @@ footer small {
     .video video {
         position: relative;
         bottom: 30px;
-        left: 200px;
-        width: 35vw;
+        left: 180px;
+        width: 30vw;
     }
     /*---- toggle button ----*/
     .nav-toggle-btn {
@@ -491,7 +539,16 @@ footer small {
 
 @media screen and (max-width:500px) {
     .video video {
-        left: 150px;
+        top: 20px;
+        left: 20px;
+    }
+    #successmsgdiv {
+        top: 200px;
+        left: 80px;
+    }
+    #successmsgdiv p {
+        width: 20%;
+        font-size: 1.7em;
     }
     footer {
         font-size: 1em;
@@ -531,8 +588,17 @@ footer small {
     textarea.form-control {
         height: 15vh;
     }
+    #successmsgdiv {
+        width: 20%;
+    }
+    #successmsgdiv p {
+        width: 20%;
+        font-size: 1.7em;
+    }
     .video video {
-        left: 100px;
+        width: 35vw;
+        top: 90px;
+        left: 60px;
     }
     footer {
         width: 100%;
