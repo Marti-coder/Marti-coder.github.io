@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="contact.css">
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/32e7f6f478.js" crossorigin="anonymous"></script>
+
     <!-- google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -90,8 +91,40 @@
         <!---------------- FORM --------------->
         <div class="form-wrapper">
 
-            <div class="form">
+            <div class="form" id="gform">
                 <h2>CONTACT</h2>
+
+                <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSclugKOiJVERHBRvHTc9Ld3D9b9yGMt7B79FZ7PmMfF4mj5TQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+
+                    <div class="form-group">
+                        <label for="Name" class="form-label">Your name</label>
+                        <div class="form-input-group">
+                            <input type="text" name="entry.334036916" id="entry.334036916" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Email" class="form-label">Your email address</label>
+                        <div class="form-input-group">
+                            <input type="email" name="entry.1680076498" id="entry.1680076498" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Message" class="form-label">Your message</label>
+                        <div class="form-input-group">
+                            <textarea id="entry.1490207851" name="entry.1490207851" class="form-control" rows="6" maxlength="3000" required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="submit-btn" id="submitbutton">Send Message</button>
+                    </div>
+
+                    <!--  <input type="submit" value="Submit"> -->
+                </form>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+                <!--
 
                 <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
 
@@ -120,7 +153,7 @@
                         <button type="submit" class="submit-btn">Send Message</button>
                     </div>
 
-                </form>
+                </form> -->
             </div>
 
         </div>
@@ -131,10 +164,13 @@
                <source src="./HwVideoEditor_2021_09_30_223210296.mp4" type="video/mp4">
            </video>
         </div>
-        <div class="other-side">
+        <!--   <div class="other-side">
             <p>Thank you for your visit!</p>
         </div>
-
+-->
+    </div>
+    <div id="successmsgdiv">
+        <p>Thank you for your visit!</p>
     </div>
 
     <!------------------- FOOTER ---------------->
@@ -151,7 +187,23 @@
 
         </div>
     </footer>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript">
+        var submitted = false;
+    </script>
+    <script>
+        $('#submitbutton').bind('click', function() {
+            $('#successmsgdiv').show();
+        });
+    </script>
+    <script type="text/javascript">
+        $('#gform').on('submit', function(e) {
+            $('#gform *').fadeOut(1000);
 
+        });
+    </script>
     <script src="contact.js"></script>
 </body>
 
